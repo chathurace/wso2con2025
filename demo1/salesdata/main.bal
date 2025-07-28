@@ -22,7 +22,7 @@ service ftp:Service on salesDataService {
                 stream<byte[] & readonly, io:Error?> dataStream = check caller->get(fileInfo.pathDecoded);
                 SalesData[] salesData = check csv:parseStream(dataStream);
                 foreach SalesData sd in salesData {
-                    sql:ExecutionResult sqlExecutionresult = check salesDB->execute(`INSERT INTO demo1.sales_data (shopId, custId, pid, quantity) VALUES (${sd.shopId}, ${sd.customer}, ${sd.product}, ${sd.quantity})`);
+                    sql:ExecutionResult sqlExecutionresult = check salesDB->execute(`INSERT INTO salesDB.sales_data (shopId, custId, pid, quantity) VALUES (${sd.shopId}, ${sd.customer}, ${sd.product}, ${sd.quantity})`);
                 }
             }
         } on fail error err {
