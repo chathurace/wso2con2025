@@ -4,7 +4,6 @@ import ballerina/http;
 import ballerina/io;
 import ballerina/log;
 import ballerina/sql;
-import ballerinax/mysql;
 
 listener http:Listener httpDefaultListener = http:getDefaultListener();
 
