@@ -1,0 +1,10 @@
+configurable string sftpHost = ?;
+configurable int sftpPort = ?;
+configurable string sftpPath = ?;
+configurable string sftpUser = ?;
+configurable string sftpPass = ?;
+configurable string dbHost = ?;
+configurable string dbUser = ?;
+configurable string dbPass = ?;
+configurable string dbName = ?;
+configurable int dbPort = ?;
