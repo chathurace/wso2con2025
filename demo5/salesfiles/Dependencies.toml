@@ -220,7 +220,7 @@ modules = [
 
 [[package]]
 org = "chathura"
-name = "salesfilea"
+name = "salesfiles"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "data.csv"},
@@ -232,6 +232,6 @@ dependencies = [
 	{org = "ballerinax", name = "mysql.driver"}
 ]
 modules = [
-	{org = "chathura", packageName = "salesfilea", moduleName = "salesfilea"}
+	{org = "chathura", packageName = "salesfiles", moduleName = "salesfiles"}
 ]
 
